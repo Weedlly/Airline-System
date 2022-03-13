@@ -28,15 +28,9 @@ public class AirlineMenu extends Application {
         /*flightsMenu1.setOnAction(e->{
             new SearchingAirline().start(new Stage());
         });*/
-        flightsMenu2.setOnAction(e->{
-            new SearchingFlights().start(new Stage());
-        });
-        userMenu1.setOnAction(e->{
-            new Information().start(new Stage());
-        });
-        userMenu2.setOnAction(e->{
-            new Ticket().start(new Stage());
-        });
+        flightsMenu2.setOnAction(e-> new SearchingFlights().start(new Stage()));
+        userMenu1.setOnAction(e-> new Information().start(new Stage()));
+        userMenu2.setOnAction(e-> new Ticket().start(new Stage()));
 
         flightsMenu.getItems().addAll(/*flightsMenu1,*/flightsMenu2);
         userMenu.getItems().addAll(userMenu1,userMenu2);
